@@ -1,0 +1,10 @@
+{
+  "name": "shows-angular-to-react",
+  "version": "0.0.0",
+  "description": "Demo - Angular to react",
+  "main": "index.js",
+  "author": "Ran wahle",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["angular", "react"]
+}
