@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {ShowsService} from './shows.service.';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,16 @@ import {ShowsService} from './shows.service.';
 export class AppComponent {
   title = 'app';
 
-  constructor(private showsService: ShowsService) {
+  shows: any[];
+  private searchResultsHidden: boolean;
+
+  constructor() {
 
   }
 
-  searchShow($event) {
-    this.showsService.searchShow($event).subscribe(res => console.log(res))
+
+
+  hideSearchResults() {
+    this.searchResultsHidden = true;
   }
 }

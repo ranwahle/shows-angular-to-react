@@ -1,3 +1,8 @@
-<p>
-  shows-list works!
-</p>
+<div class="shows-container" *ngIf="shows">
+
+  <div *ngFor="let show of shows">
+    <a [routerLink]="['show', show.id]"><p>{{show.name}}</p>
+    <img *ngIf="show.image" [src]="show.image.medium" />
+    </a>
+  </div>
+</div>

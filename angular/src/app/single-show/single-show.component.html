@@ -1,0 +1,9 @@
+<div *ngIf="show">
+  <a [attr.href]="show.url"> <p>{{show.name}}</p></a>
+   <p [innerHtml]="show.summary"></p>
+  <a [attr.href]="show.url">
+  <img  *ngIf="show.image" [src]="show.image.original"/>
+ </a>
+
+  <a [routerLink]="['/']">Go Back</a>
+</div>
