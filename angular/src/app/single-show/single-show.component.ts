@@ -18,7 +18,8 @@ export class SingleShowComponent implements OnInit {
   ngOnInit() {
     this.acticatedRoute.params.subscribe((params: any) => {
       const id = params.id;
-      this.showsService.getShowById(id).subscribe(show => {
+      this.showsService.getShowById(id).subscribe((show: any) => {
+        document.title = show.name;
         this.show = show;
         this.show.summry = this.sanitizer.bypassSecurityTrustHtml(this.show.summary);
       })

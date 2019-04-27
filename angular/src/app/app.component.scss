@@ -1,0 +1,9 @@
+@import '../variables';
+:host {
+  div.header {
+    color: black;
+    padding: 5px;
+    //border-radius: 5px;
+    background-color: $background-color;
+  }
+}

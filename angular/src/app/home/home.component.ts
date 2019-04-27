@@ -19,12 +19,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.searchTerm = this.showsService.lastSearch || '';
+    document.title = 'Search show';
     if (this.searchTerm) {
       this.searchShow(this.searchTerm);
     }
   }
 
   searchShow($event) {
+    document.title = `Search for ${$event}`;
     this.showsService.searchShow($event).subscribe(res => {
       this.shows = res.map(show => show.show);
       this.searchResultsHidden = false;

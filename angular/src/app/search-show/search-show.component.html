@@ -1,3 +1,6 @@
 <form (submit)="submitForm()">
-  <input name="search-term" type="text" [(ngModel)]="searchTerm" >
+  <div>
+    <input name="search-term" type="text" placeholder="Search term" [(ngModel)]="searchTerm">
+    <i class="fas fa-search" (click)="submitForm()"></i>
+  </div>
 </form>
