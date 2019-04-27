@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Ran wahle",
   "license": "MIT",
-  "private": true
-
+  "private": true,
+  "dependencies": {
+    "husky": "^2.1.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0"
+  }
 }
