@@ -1,5 +1,6 @@
 import React from 'react';
 import './shows-list.scss';
+import {Link} from "react-router-dom";
 
 
 function ShowsList(props) {
@@ -8,8 +9,12 @@ function ShowsList(props) {
         console.log('prop.shows', props.shows)
         return (<div className="shows-container">
             {shows.map(show => {
-                return (<div><p>{show.name}</p> <img alt={show.name}
-                                                                src={show.image.medium}/></div>);
+                return (<div>
+                    <Link to={`show/${show.id}`}>
+                    <p>{show.name}</p> <img alt={show.name}
+                                                                src={show.image.medium}/>
+                    </Link>
+                    </div>);
             })
             }
         </div>)
