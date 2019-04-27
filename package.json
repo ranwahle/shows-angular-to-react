@@ -5,6 +5,6 @@
   "main": "index.js",
   "author": "Ran wahle",
   "license": "MIT",
-  "private": true,
-  "workspaces": ["angular", "react"]
+  "private": true
+
 }
