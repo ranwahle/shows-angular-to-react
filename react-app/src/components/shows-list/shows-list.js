@@ -12,7 +12,7 @@ function ShowsList(props) {
                 return (<div>
                     <Link to={`show/${show.id}`}>
                     <p>{show.name}</p> <img alt={show.name}
-                                                                src={show.image.medium}/>
+                                                                src={show.image? show.image.medium: `${process.env.PUBLIC_URL}/assets/images/no-img-portrait-text.png`}/>
                     </Link>
                     </div>);
             })

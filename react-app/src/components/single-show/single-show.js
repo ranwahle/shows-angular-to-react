@@ -20,7 +20,7 @@ function SingleShow({match}) {
     <a href={show.url}> <p>{show.name}</p></a>
    <p>{show.summary}</p>
   <a href={show.url}>
-  <img   src={ show.image? show.image.original: '/assets/images/no-img-portrait-text.png' }/>
+  <img  src={ show.image? show.image.original: '/assets/images/no-img-portrait-text.png' }/>
 
   </a>
 
