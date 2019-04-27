@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import Home from "./components/home/home";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <div className="header">
                 <h1> The Angular-2-React Show</h1>
             </div>
+            <Home/>
 
         </div>
 
